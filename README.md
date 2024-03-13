@@ -50,10 +50,11 @@ To create an exe file in Windows, you need to execute the following command in t
 ```bash
 pyinstaller --onefile --windowed --add-data "logo.ico;." --icon=logo.ico main.py
 ```
-I strongly recommend that you use [UPX](https://upx.github.io/) to create exe files using pyinstaller to reduce the size of the executable. In this case you can run the following command:
+I strongly recommend that you use [UPX](https://upx.github.io/) to reduce the size of the executable. In this case you can run the following command:
 ```bash
 pyinstaller --onefile --windowed --add-data "logo.ico;." --icon=logo.ico --upx-dir=Path\to\the\upx-4.2.2-win64 main.py
 ```
+The final size of the exe file will be about 38 MB.
 
 ## Usage
 
